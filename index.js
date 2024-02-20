@@ -6,11 +6,20 @@ let temp;
 
 function convert() {
     if (fahrenheitTemp.checked) {
-        //console.log("degrees in fahrenheit")
-        result.textContent = "You Selected Fahrenheit";
+        //When we accept user input, its of the string datatype so we typecast Number as a value so we can use it with math
+        temp = Number(textBox.value);
+
+        // Now we grab the value and convert it to Fahrenheit
+        temp = temp * 9 / 5 + 32;
+
+        //update text content of the result
+        result.textContent = temp.toFixed(2) + "° Fahrenheit"
+
     } else if (celciusTemp.checked) {
-       // console.log("degrees in celcius")
-        result.textContent = "You Selected Celcius";
+        temp = Number(textBox.value);
+        temp = temp * 5 / 9 - 32;
+        result.textContent = temp.toFixed(2) + "° Celcius"
+
     } else {
         result.textContent = "Select a unit";
     }
