@@ -17,10 +17,15 @@ function convert() {
 
     } else if (celciusTemp.checked) {
         temp = Number(textBox.value);
-        temp = temp * 5 / 9 - 32;
+        temp = (temp - 32) * (5 / 9);
         result.textContent = temp.toFixed(2) + "° Celcius"
 
     } else {
         result.textContent = "Select a unit";
     }
+}
+
+function clearText() {
+    console.log("reset button Clicked");
+    result.textContent = "";
 }
