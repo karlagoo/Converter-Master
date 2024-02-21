@@ -26,6 +26,6 @@ function convert() {
 }
 
 function clearText() {
-    console.log("reset button Clicked");
+    //console.log("reset button Clicked");
     result.textContent = "";
 }
