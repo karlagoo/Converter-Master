@@ -10,16 +10,23 @@ function Temperatures() {
     setMetric(value)
   }
 
-  var convert = function () {
+  const convert = function () {
     if(metric === "fahrenheit"){
       let temp = Number(input);
       temp = temp * 9/5 + 32;
+      setResult(temp.toFixed(2) + "° Fahrenheit");
 
     } else if (metric === "celcius") {
       let temp = Number(input);
       temp = (temp - 32) * (5 / 9);
+      setResult(temp.toFixed(2) + "° Celcius");
     }
   };
+
+  const clearText = function() {
+    setResult('')
+    setInput('')
+  }
 
   return (
     <div>
@@ -60,6 +67,9 @@ function Temperatures() {
 
           <button type="button" onClick={convert}>
             Submit
+          </button>
+          <button type="reset" onClick={clearText}>
+            Clear
           </button>
 
           <p
