@@ -1,5 +1,5 @@
 import './App.css';
-import Temperatures from './components/Temperatures'
+import Temperatures from './components/temperatures/Temperatures'
 
 function App() {
   return (
