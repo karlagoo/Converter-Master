@@ -30,9 +30,6 @@ function Temperatures() {
 
   return (
     <div>
-      <form action="">
-        <h1>Master Converter</h1>
-        <h2 className="section_subtitle">Temperatures</h2>
         <div>
           <input
             type="number"
@@ -77,7 +74,6 @@ function Temperatures() {
             className="result_box"
           >{result}</p>
         </div>
-      </form>
     </div>
   );
 }

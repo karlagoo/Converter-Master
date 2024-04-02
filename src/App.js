@@ -4,7 +4,13 @@ import Temperatures from './components/temperatures/Temperatures'
 function App() {
   return (
     <div className="App">
-      <Temperatures />
+      <form action="">
+        <h1>Master Converter</h1>
+        <h3>Currency | Temperatures | Time Zone
+        </h3>
+         <Temperatures />
+      </form>
+     
     </div>
   );
 }
