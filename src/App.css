@@ -4,7 +4,9 @@ body {
   color: var(--text-color);
 }
 
-li {
+ul {
+  justify-content: space-between;
+  list-style-type: none; 
   display: flex;
-  justify-content: center;
+  padding-left: 0px;
 }
