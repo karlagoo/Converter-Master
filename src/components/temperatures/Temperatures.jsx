@@ -31,6 +31,7 @@ function Temperatures() {
   return (
     <div>
         <div>
+          <h2>Temperatures</h2>
           <input
             type="number"
             className="text_box"
