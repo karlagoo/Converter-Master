@@ -1,5 +1,6 @@
 :root {
   --header-height: 3rem;
+  --background-color: blue;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -63,7 +64,13 @@ ul {
   padding-left: 0px;
 }
 
-a {
+.active {
   text-decoration: none;
-  color: var(--text-color);
+  color: black;
 }
+
+.inactive {
+  color: var(--text-color);
+   text-decoration: none;
+}
+

@@ -4,9 +4,10 @@ import Currency from './components/currency/Currency';
 import TimeZone from './components/time/TimeZone';
 import Home from './components/home/Home'
 
-import { Link, Route, Routes } from 'react-router-dom';
+import { NavLink, Route, Routes } from 'react-router-dom';
 
 function App() {
+
   return (
     <div className="App">
       <form action="">
@@ -15,10 +16,10 @@ function App() {
         <>
           <nav>
             <ul>
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='/temperatures'>Temperatures</Link></li>
-              <li><Link to='/currency'>Currency</Link></li>
-              <li><Link to='/time_zone'>Time Zone</Link></li>
+              <li><NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to='/'>Home</NavLink></li>
+              <li><NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to='/temperatures'>Temperatures</NavLink></li>
+              <li><NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to='/currency'>Currency</NavLink></li>
+              <li><NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to='/time_zone'>Time Zone</NavLink></li>
             </ul>
           </nav>
         </>
