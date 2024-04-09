@@ -1,6 +1,5 @@
 :root {
   --header-height: 3rem;
-  --background-color: blue;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -53,7 +52,7 @@ form {
 
 body {
   font-family: var(--body-font);
-  background-color: var(--body-color);
+  background-color: #e9edc9;
   color: var(--text-color);
 }
 
