@@ -5,7 +5,7 @@ const BASE_URL = `https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_API
 
 function Currency() {
   const [currencyOptions, setCurrencyOptions] = useState([]);
-  //console.log(currencyOptions)
+  console.log(currencyOptions)
 
   useEffect(() => {
     fetch(BASE_URL)
