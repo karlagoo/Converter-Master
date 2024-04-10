@@ -1,8 +1,18 @@
-input {
-    width: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    color: var(--text-color);
-    border-radius: 0.75rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.input {
+  width: 7em;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  margin-left: 1rem;
+}
+
+.equals {
+  font-weight: var(--font-semi-bold);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
